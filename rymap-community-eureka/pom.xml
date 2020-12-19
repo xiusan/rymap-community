@@ -13,7 +13,7 @@
 	<artifactId>rymap-community-eureka</artifactId>
 
 	<dependencies>
-		<!--eureka-server-->
+		<!--eureka-server 2020.02-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
@@ -21,7 +21,7 @@
 		<!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
 		<dependency>
 			<groupId>com.xjl</groupId>
-			<artifactId>cloud-api-commons</artifactId>
+			<artifactId>rymap-community-commons</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!--boot web actuator-->

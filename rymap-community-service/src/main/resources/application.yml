@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: rymap-community-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
@@ -24,11 +26,11 @@ eureka:
     fetchRegistry: true
     service-url:
       #单机版
-#      defaultZone: http://localhost:7001/eureka
+     defaultZone: http://localhost:7001/eureka
       # 集群版
-      defaultZone: http://eureka7001.com:7001/eureka
+ #      defaultZone: http://eureka7001.com:7001/eureka
   instance:
-      instance-id: payment8001
+      instance-id: rymap-community-service-payment8001
       #访问路径可以显示IP地址
       prefer-ip-address: true
       #Eureka客户端向服务端发送心跳的时间间隔，单位为秒(默认是30秒)

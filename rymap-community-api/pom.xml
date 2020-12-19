@@ -11,8 +11,6 @@
 
 		<artifactId>rymap-community-api</artifactId>
 
-
-
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -21,7 +19,7 @@
 			<!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
 			<dependency>
 				<groupId>com.xjl</groupId>
-				<artifactId>cloud-api-commons</artifactId>
+				<artifactId>rymap-community-commons</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
