@@ -80,7 +80,7 @@ public class OrderController
     @GetMapping(value = "/consumer/payment/lb")
     public String getPaymentLB()
     {
-        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
+        List<ServiceInstance> instances = discoveryClient.getInstances("RYMAP-COMMUNITY-SERVICE");
 
         if(instances == null || instances.size() <= 0)
         {
@@ -89,8 +89,9 @@ public class OrderController
 
         ServiceInstance serviceInstance = loadBalancer.instances(instances);
         URI uri = serviceInstance.getUri();
-       String ssss = "http://127.0.0.1:"+uri.getPort();
-       return restTemplate.getForObject(ssss+"/payment/lb",String.class);
+       String ssss = PAYMENT_URL+"/payment/lb";
+       log.info(ssss);
+       return restTemplate.getForObject(ssss,String.class);
 
     }
 
