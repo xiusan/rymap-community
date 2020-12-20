@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>com.xjl</groupId>
-            <artifactId>cloud-api-commons</artifactId>
+            <artifactId>rymap-community-commons</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
